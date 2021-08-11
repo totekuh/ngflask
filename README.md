@@ -1,5 +1,7 @@
 # ngflask
-Serving static files and directories over Flask/Ngrok with just one command
+Serving static files and directories from your local machine over the Internet with just one command.
+The script first binds a flask server to the given address and starts sharing files from the specified directory.
+It then creates a tunnel through the Ngrok network and prints the public URL pointing to the local flask server.
 
 ## Installation
 
