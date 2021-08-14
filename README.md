@@ -3,7 +3,7 @@ Serving static files and directories from your local machine over the Internet w
 
 The script first binds a flask server to the given address and starts sharing files from the specified directory.
 
-It then creates a tunnel through the Ngrok network and prints the public URL pointing to the local flask server.
+It then creates a tunnel through the Ngrok network and gives you the public URL tunneled to the local flask server.
 
 ## Installation
 
