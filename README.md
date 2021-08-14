@@ -5,7 +5,7 @@ The script first binds a flask server to the given address and starts sharing fi
 
 It then creates a tunnel through the Ngrok network and gives you the public URL tunneled to the local flask server.
 
-Useful for file transferring once you've compromised a host inside an internal network and outgoing Internet connections aren't forbidden.
+Useful for files transferring once you've compromised a host inside an internal network and outgoing Internet connections aren't forbidden.
 
 ## Installation
 
