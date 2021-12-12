@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import glob
 import os
 from pyngrok import ngrok
 from flask import Flask
@@ -34,7 +34,6 @@ def get_arguments():
                         type=str,
                         help="The local directory to shave over the ngrok network. "
                              "Default is the current working directory.")
-
     options = parser.parse_args()
     return options
 
@@ -56,6 +55,11 @@ class TunneledHttpServer:
         self.public_url = ngrok.connect(self.port, bind_tls=True).public_url
         print(f" * Ngrok tunnel {self.public_url} -> http://{self.ip}:{self.port}/")
         print(f" * Serving the '{self.directory}' directory")
+
+        for current_path, folders, files in os.walk(self.directory):
+            for file in files:
+                relpath = os.path.relpath(os.path.join(current_path, file))
+                print(f" * Serving '{self.public_url}/{relpath}'")
         self.app.config["BASE_URL"] = self.public_url
         self.app.run(host=self.ip, port=self.port)
 
