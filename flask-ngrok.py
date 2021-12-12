@@ -54,7 +54,7 @@ class TunneledHttpServer:
         )
         self.public_url = ngrok.connect(self.port, bind_tls=True).public_url
         print(f" * Ngrok tunnel {self.public_url} -> http://{self.ip}:{self.port}/")
-        print(f" * Serving the '{self.directory}' directory")
+        print(f" * Serving files from the '{self.directory}' directory")
 
         for current_path, folders, files in os.walk(self.directory):
             for file in files:
