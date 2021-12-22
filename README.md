@@ -24,6 +24,9 @@ sudo link flask-ngrok.py /usr/bin/ngflask
 ### Serve files and folders from the /tmp directory
 `ngflask --directory /tmp`
 
+### Print served files to the console on startup
+`ngflask --directory /tmp -pf`
+
 ### Bind the server to a specific address
 `ngflask --ip 10.10.10.10 --port 5050`
 
