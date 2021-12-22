@@ -16,6 +16,12 @@ cd ngflask
 pip3 install -r requirements.txt
 sudo link flask-ngrok.py /usr/bin/ngflask
 ```
+
+Or using PyPI
+```bash
+pip3 install -r ngflask
+```
+
 ## Usage
 
 ### Serve files and folder from the current working directory
