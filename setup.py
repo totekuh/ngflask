@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 setup(
     name='ngflask',  # Required
-    version='1.0.2',  # Required
+    version='1.0.3',  # Required
     description='File-sharing tool',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional (see note above)
