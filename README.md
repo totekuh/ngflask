@@ -11,7 +11,7 @@ Useful for transferring the files when you compromised a host inside an internal
 
 ```bash
 sudo apt install python3 python3-pip
-git clone https://github.com/derstolz/ngflask
+git clone https://github.com/cyberhexe/ngflask
 cd ngflask
 pip3 install -r requirements.txt
 sudo link flask-ngrok.py /usr/bin/ngflask
