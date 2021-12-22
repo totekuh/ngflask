@@ -50,7 +50,7 @@ setup(
     },
 
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/cyberhexe/revshell-generator/issues',
-        'Source': 'https://github.com/cyberhexe/revshell-generator',
+        'Bug Reports': 'https://github.com/cyberhexe/ngflask/issues',
+        'Source': 'https://github.com/cyberhexe/ngflask',
     },
 )
