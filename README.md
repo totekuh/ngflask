@@ -19,7 +19,7 @@ sudo link flask-ngrok.py /usr/bin/ngflask
 
 Or using PyPI
 ```bash
-pip3 install -r ngflask
+pip3 install ngflask
 ```
 
 ## Usage
