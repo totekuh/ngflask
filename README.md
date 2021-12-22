@@ -27,5 +27,5 @@ sudo link flask-ngrok.py /usr/bin/ngflask
 ### Bind the server to a specific address
 `ngflask --ip 10.10.10.10 --port 5050`
 
-### Print the banner
+### Print help
 `ngflask -h`
