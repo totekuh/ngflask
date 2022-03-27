@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+version = "1.0.5"
+
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 
@@ -7,7 +9,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 setup(
     name='ngflask',  # Required
-    version='1.0.4',  # Required
+    version=version,  # Required
     description='File-sharing tool',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional (see note above)
